@@ -1,0 +1,21 @@
+p{
+    text-align: justify;
+}
+
+.hp{
+    text-align: center;
+}
+
+.fp{
+    text-align: center;
+    color: #ddd;
+}
+
+ol{
+    list-style: none;
+    padding: 10px;
+}
+
+li{
+    padding: 3px;
+}
