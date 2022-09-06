@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Latihan Form</title>
+	</head>
+	<body>
+		<form name="frmLatihan" method="GET" action="#">
+			
+			<table border="0" align="center" cellpadding="15" width="30%">
+				<thead>
+					<tr bgcolor="gray">
+						<th colspan="2">Form Register Produk</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr bgcolor="gray">
+						<th colspan="2">
+							<input type="submit" name="proses" value="Kirim" />&nbsp;&nbsp;
+							<input type="reset" name="unproses" value="Batal" />
+						</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td width="25%"><label>Nama Produk</label></td>
+						<td>
+							<input type="text" name="nama" value=""/>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Jenis Produk</label></td>
+						<td>
+							<select id="jenis" name="jenis">
+								<option value="" disabled selected>-Kategori Produk-</option>
+                                <option value="Elektronik">Elektronik</option>
+                                <option value="Serba Guna">Serba Guna</option>
+                                <option value="Peralatan Dapur">Peralatan Dapur</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Harga</label></td>
+						<td>
+							<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" name="Harga">
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"><label>Stock</label></td>
+						<td>
+							<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" name="stock">
+						</td>
+					</tr>
+					<tr>
+						<td><label>Photo</label></td>
+						<td>
+							<input type="file">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form><br>
+
+        <form name="frmLatihan" method="POST" action="#">
+			
+			<table border="0" align="center" cellpadding="15" width="30%">
+				<thead>
+					<tr bgcolor="gray">
+						<th colspan="2">Form Register Member</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr bgcolor="gray">
+						<th colspan="2">
+							<input type="submit" name="proses" value="Masuk" />&nbsp;&nbsp;
+							<input type="reset" name="unproses" value="Batal" />
+						</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td width="25%"><label>Username</label></td>
+						<td>
+							<input type="text" name="username" maxlength="10"/>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Password</label></td>
+						<td>
+							<input type="password" name="password" maxlength="6">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+	</html>
+	
+	
